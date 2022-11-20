@@ -1,0 +1,11 @@
+js - javascript
+
+HTML+CSS -> Static pages
+
+for Dynamic page response we use javascript.
+
+we can add or delete elements of HTML and CSS
+
+where we can run js : 
+        1- run on web browser
+        2- other than web browser

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<head>
+    <title> UI</title>
+</head>
+<body>
+</body>
+<script>
+
+function randomGenerate(min=0, max=255)                    //generates a random number between 0 to 255
+{
+    return Math.floor(Math.random()*(max-min))+min;
+}
+let h1=document.createElement("h1");
+h1.id="planText";
+h1.innerHTML="<marquee> Kshitij Kumar Sharma </marquee>";
+document.body.appendChild(h1);
+
+setInterval(() => {
+    let rcolor = randomGenerate();
+    let gcolor=randomGenerate();
+    let bcolor=randomGenerate();
+
+    let color=`rgb(${rcolor},${gcolor},${bcolor})`;
+
+    let rbcolor = randomGenerate();
+    let gbcolor=randomGenerate();
+    let bbcolor=randomGenerate();
+
+    let bgcolor=`rgb(${rbcolor},${gbcolor},${bbcolor})`;
+    document.body.style.backgroundColor = bgcolor;
+    document.getElementById("planText").style.color=color;
+    document.getElementById("planeText").style.fontSize="5rem";
+}, 200);
+
+</script>
+</html>
